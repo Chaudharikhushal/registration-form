@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="design.css">
+    <title>Registration form</title>
+    <style >
+    	#container{
+    display: flex;
+        height: calc(100vh - 9.5em);
+        border: 5px solid gray;   
+}
+
+#Main_Form{
+    font-size: larger;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(87, 94, 18);
+}
+
+#Main_table{
+    height: 100%;
+    width: 100%; 
+    background-color: rgb(282, 1, 110); 
+}
+
+.box{
+    border: 5px solid rgb(444, 18, 19);
+    border-radius: 8px;
+    box-sizing: border-box;
+     height: 33px;
+    width: 20em; 
+    display: flex;
+}
+
+#main_table{
+    margin: auto;
+    height: 50px; 
+}
+.table_head{
+    /* padding: 5px; */
+    font-size: 20px;
+    height: 50px;
+}
+.row{
+    padding: 5px;
+}
+
+#tbl{
+margin: 10px;
+}
+.btn{
+    font-size: 20px;
+    border-radius: 5px;
+}
+.btn1{
+    font-size: 15px;
+    border-radius: 5px;
+}
+    </style>
+</head>
+<body>
+    <h2 style=" background-color: red; height: 40PX;"><center>My Registration Form</center></h2>
+<div id = "container">
+    
+<div id = "Main_Form">
+    <form method="post" name="sample"  class="inp">
+
+        Name:<input type="text" name="Text" class="box" id="Text"><br>
+        Roll No <input type="text" name="Number" class="box" id="Number"><br> Gender <input type="radio" name="gender" value="Female" id="gender">Female 
+        <input type="radio" name="gender" value="Male"  checked> Male 
+        <input type="radio" name="gender" value="Other" > Other
+        <br><br>Branch <input type="text" name="stream" class="box" id="stream"><br>
+        Email: <input class="box " type="text" name="email" class="box" id="email"><br>
+        Mobile Number <input type="Number" name="Phone" class="box" id="Phone"><br>
+        
+
+       
+
+        
+        <!-- Profile Photo:<input type="file" name="Upload_file" id="Upload file"> -->
+      <br><br>  <input type="button" name="add" value=" Enroll Now"  class="btn" onclick="addStudent();">
+        <input type="reset" name="reset" value="clear" class="btn1">
+    </form>
+</div>
+
+<div id="Main_table">
+<center>
+    <H3 style="margin-top: 100px;">Enrolled Student </H3>
+    <table id = "tbl" border="3" >
+<thead class="table_head">
+    <tr >
+        <th class="row">Name</th>
+        <th class="row">Roll no.</th> <th class="row">Gender</th> <th class="row">Branch</th>
+        <th class="row">Email</th>
+        <th class="row">Mobile Number</th>
+       
+       
+        <!-- <th class="row">Profile Photo</th>    -->
+    </tr>
+</thead>
+<tbody>
+
+
+</tbody>
+    </table></center>
+</div>
+</div>
+
+<script src="index.js"></script>
+
+</body>
+</html>
